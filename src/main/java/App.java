@@ -1,8 +1,14 @@
 public class App {
 
     static void main(String[] args){
+        Account acc = new Account("aa", "sad", "sa");
 
-        System.out.println("Hello World");
+        Service service = new Service();
+
+        service.addAccount(acc);
+
+
+        System.out.println(service.getAccounts());
 
     }
 }
