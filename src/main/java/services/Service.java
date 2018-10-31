@@ -2,6 +2,7 @@ package services;
 
 import accounts.Account;
 import java.util.HashMap;
+import java.util.Map;
 
 public class Service {
     private static int id;
@@ -34,6 +35,23 @@ public class Service {
 
     public static void getAccount(Account acc) {
         acc.getFirstName();
+    }
+
+
+//    		map.forEach((key,value) -> System.out.println(key + " = " + value));
+
+    public static int countFirstNames(String nameToCheck) {
+        int count = 0;
+        for (HashMap.Entry<Integer, Account> entry : accounts.entrySet()) {
+            String firstname = entry.getValue().getFirstName();
+            if (firstname == nameToCheck ){
+                count ++;
+            }
+
+    }
+        return count;
+
+
     }
 
 
