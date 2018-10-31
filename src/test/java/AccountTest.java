@@ -19,6 +19,7 @@ public class AccountTest {
         service.addAccount(2, acc);
 
         assertEquals(2, service.countFirstNames("aa"));
+        assertEquals(2, service.countWithStreams("aa"));
 
 
 

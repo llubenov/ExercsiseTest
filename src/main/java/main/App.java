@@ -24,7 +24,7 @@ public class App {
 
         service.countFirstNames("aa");
 
-        System.out.println(service);
+        service.countWithStreams("aa");
 
 
 
