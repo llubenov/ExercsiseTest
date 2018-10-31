@@ -1,3 +1,5 @@
+package accounts;
+
 public class Account {
 
     private String firstName;
